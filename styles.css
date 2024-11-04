@@ -102,7 +102,7 @@ a.button {
 table {
   width: 80%; /* Reduz a largura da tabela para 80% */
   border-collapse: collapse;
-  margin-top: 20px;
+  margin: 20px auto; /* Centraliza a tabela */
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
   border-radius: 10px;
