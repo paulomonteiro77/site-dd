@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4; /* Cor de fundo claro */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e0f7fa; /* Cor de fundo clara e relaxante */
   color: #333; /* Cor do texto escuro */
   margin: 0;
   padding: 0;
@@ -11,10 +11,11 @@ body {
 
 header {
   text-align: center;
-  background-color: #4CAF50; /* Cor verde */
+  background-color: #00796b; /* Cor verde escura */
   color: #fff;
   padding: 20px;
   width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .logo {
@@ -30,8 +31,12 @@ header {
 .content-wrapper {
   display: flex;
   flex-direction: row-reverse; /* Inverte a direção das divs */
-  max-width: 800px;
+  max-width: 1200px;
   margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px;
 }
 
 .imagem {
@@ -44,7 +49,7 @@ header {
   max-width: 100%;
   height: auto; /* Mantém a proporção da imagem */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra ao redor da imagem */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra ao redor da imagem */
   transition: transform 0.3s ease; /* Suave transição para o efeito zoom */
 }
 
@@ -58,7 +63,7 @@ header {
 }
 
 .content h2, .content h3 {
-  color: #4CAF50; /* Cor verde */
+  color: #00796b; /* Cor verde escura */
 }
 
 .content p {
@@ -69,17 +74,18 @@ header {
 
 .button {
   display: inline-block;
-  background-color: #4CAF50; /* Cor verde */
+  background-color: #00796b; /* Cor verde escura */
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.2em;
   margin: 20px 0;
+  transition: background-color 0.3s ease; /* Suave transição de cor */
 }
 
 .button:hover {
-  background-color: #45a049; /* Cor verde mais escuro */
+  background-color: #004d40; /* Cor verde mais escuro */
 }
 
 .label {
@@ -90,4 +96,34 @@ a.button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Estilos da tabela */
+table {
+  width: 80%; /* Reduz a largura da tabela para 80% */
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px;
+  overflow: hidden; /* Garante que a borda redonda funcione */
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+th {
+  background-color: #00796b; /* Cor verde escura */
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
 }
